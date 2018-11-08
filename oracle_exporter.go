@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/codestoke/oracle_exporter/collector"
 	"github.com/prometheus/client_golang/prometheus"
 	"log"
@@ -39,12 +40,16 @@ func Describe(ch chan<- *prometheus.Desc) {
 }
 
 func main() {
-	db, err := sql.Open("oci8", "user:")
+	fmt.Println("hello")
+	db, err := sql.Open("oci8", "system/system@oraxe:1521/xe")
 	if err != nil {
 		log.Fatal("could not open db")
 		os.Exit(1)
 	}
 	defer db.Close()
 
-	db.Ping()
+	ping := db.Ping()
+	fmt.Println(ping)
+
+	fmt.Println("good bye")
 }
