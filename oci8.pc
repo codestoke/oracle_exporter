@@ -1,7 +1,7 @@
 prefix=/devel/target/XXXXXXXXXXXXXXXXXXXXXXXXXX
 exec_prefix=${prefix}
-libdir=C:/app/oracle/instantclient_12_2/sdk/lib/msvc
-includedir=C:/app/oracle/instantclient_12_2/sdk/include/include
+libdir="C:\app\oracle\instantclient_12_2\sdk\lib\msvc"
+includedir="C:\app\oracle\instantclient_12_2\sdk\include"
 
 glib_genmarshal=glib-genmarshal
 gobject_query=gobject-query
