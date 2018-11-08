@@ -11,6 +11,7 @@ this is subject to change and my first approach.
     1. install to `c:\app\cygwin`
     1. install pkg-config
     1. install gcc
+    1. install mingw64
     1. add `c:\app\cygwin\bin` to PATH
 1. install oracle instant client
     1. install to `C:\app\oracle\instantclient_12_2` (select your version of ic)
